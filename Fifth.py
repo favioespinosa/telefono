@@ -1,4 +1,9 @@
 class lista:
+	def __init__(self):
+		self.next=None
+		self.number=None
+		self.longitud=0
+		self.letra=''
 	def ingresar_lista(self,number):#Put a element to the list
 		
 		while self.next!=None:
@@ -105,10 +110,6 @@ def Render(mes,tam):
 	return k,l
 tam=0
 a1=lista()
-a1.next=None
-a1.number=None
-a1.longitud=0
-a1.letra=''
 numero=input()
 numero=alrevez(numero)
 Iniciador(a1,int(numero))
